@@ -54,11 +54,11 @@ public class Main {
         if (deliveryDistance > 60) {
             deliveryDays++;
         }
-        if (deliveryDistance > 100) {
-            deliveryDays++;
-        }
-
         System.out.println("Потребуется дней:" + deliveryDays);
+
+        if (deliveryDistance > 100) {
+            System.out.println("Свыше 100 км доставки нет");
+        }
 
     }
 
